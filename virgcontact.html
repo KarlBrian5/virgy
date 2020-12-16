@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="virg.css" />
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+At virginia designs one can check out best selection for the best in unique or custom homemade clothes.<br /><br /><br /><br />
+<script>
+function validateForm()
+{
+	var name = document.forms["myForm"]["name"].value;
+	if(name == null || name == ""){
+		alert("Name must be filled out!");
+return false;}
+var txt = document.forms["myForm"]["txt"].value;
+	if(txt == null || txt == ""){
+		alert("Text Must be filled out!");
+return false;}
+</script>
+</head>
+<body>
+<div class="container">
+        <nav class="navbar nav-tabs navbar-expand-lg bg-dark text-light">
+<div class="machakos">
+<b><u color="red"><font size=4 color="dark-yellow">Virginia Designs.</font></u></b>
+The best designs
+<button><a href="index.html">HOME</a></button>
+<button ><a href="virggallery.html">PICTURE GALLERY</a></button>
+<button ><a href="virgsign.html">SIGN UP AS A MEMBER</a></button>
+
+<div class="dropdown">
+<button >LOGIN</button>
+<div class="dropdown-content">
+<a href="virglogin.html">ADMIN</a>
+<a href="virgloginuser.html">USER</a>
+</div></div>
+<button><a href="virgcontact.html">CONTACT US</a></button>
+</div><div>
+</nav>
+<div class="forumm">
+<h3>Welcome to Virginia designs</h3><br />
+<p>Virginia designs is an high classic boutique for both ladies and Men.<br /><br />
+It deals with the latest and most rated designs one should have.<br /><br />
+
+The designs ranges from traditionsl clothing having unique designs and perfect tailoring. <br /><br />
+
+
+<div class="forum">
+<form  action = "includes/virgcont.php" method = "POST" name="myForm" onsubmit="return validateForm()">
+<label for="ha" class="label">Name:<input id="ha" type="text" name="name" placeholder="Enter Name"><br /><br />
+<label for="he">Text Here: <input id="he"  type="textarea" name="txt" placeholder="Write something"><br /><br />
+<button class="button2" type="submit" name="submit" >SUBMIT</button>
+</form>
+</div><br />
+</div>
+</body>
+</html>
